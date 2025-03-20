@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitchenCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="upperHeader">
+        <div class="container">
+            <h2>Kitchen Craft</h2>
+            <nav class="navBar">
+                <ul>
+                    <li>Home</li>
+                    <li>Recipe</li>
+                    <!-- <li>Book</li> -->
+                    <li>Log-In</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="searchBar">
+        <input type="text" id="searchInput" placeholder="Search..">
+        <div id='submitsearch'>
+            <span>Search</span>
+        </div>
+    </div>
+    </div>
+    <section class="firstSec">
+        <div class="leftSec">
+            <section class="lefttext">
+                <h1>Best Recipe</h1>
+                <h2>Discover delicious meals, plan your perfect week, and make every dish a masterpiece</h2>
+                <p>Your Kitchen, Your Recipes, Your Way!</p>
+            </section>
+            <section class="leftbutton">
+                <button type="button" class="BTN">Contact US</button>
+                <button type="button" class="BTN">Add Recipe</button>
+                <button type="button" class="BTN">Order Now</button>
+            </section>
+        </div>
+        <div class="rightSec">
+            <div class="thali">
+                <img src="images/fastFood.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <div class="foodarea">
+        <div class="cardheader">
+            <h1>Our Popular Recipes</h1>
+        </div>
+        <div class="foodcards">
+
+            <div class="box" id="biryaniBox">
+                <img src="/images/biryani.png" alt="Biryani">
+                <h3>Biryani</h3>
+            </div>
+
+            <div class="box" id="chanaMasalaBox">
+                <img src="/images/chanamasala.png" alt="Chana-Masala">
+                <h3>Chana-Masala</h3>
+            </div>
+
+            <div class="box" id="halwaBox">
+                <img src="/images/haalwa.webp" alt="Halva">
+                <h3>Halva</h3>
+            </div>
+
+            <div class="box" id="maggiBox">
+                <img src="/images/maggi.png" alt="Maggi">
+                <h3>Maggi</h3>
+            </div>
+
+            <div class="box" id="paneerBox">
+                <img src="/images/paneerButterMasala.png" alt="Paneer Butter Masala">
+                <h3>Paneer Butter Masala</h3>
+            </div>
+
+            <div class="box" id="atikkiBox">
+                <img src="/images/atikki.png" alt="veg">
+                <h3>Aloo Tikki</h3>
+            </div>
+
+            <div class="box" id="cakeBox">
+                <img src="/images/cake.webp" alt="cake">
+                <h3>Cake</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="overlayBir" id="overlayBir"></div> <!-- Dark overlay background -->
+    <div class="popupBir" id="popupBir">
+        <h3>Biryani Recipe Details</h3>
+        <h4>Ingredients Required:</h4>
+        <ul>
+            <li>1 cup basmati rice</li>
+            <li>200g chicken</li>
+            <li>1 onion (sliced)</li>
+            <li>2 tomatoes (chopped)</li>
+            <li>1/2 cup yogurt</li>
+            <li>2 tbsp biryani masala</li>
+            <li>Fresh coriander and mint leaves</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2 tbsp oil or ghee</li>
+            <li>Salt to taste</li>
+        </ul>
+        <h4>Time Required:</h4>
+        <p>Preparation Time: 20 minutes<br>
+            Cooking Time: 40 minutes</p>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Soak the basmati rice for 30 minutes, then cook until 70% done. Set aside.</li>
+            <li>In a pan, heat oil/ghee and sauté the sliced onions until golden brown.</li>
+            <li>Add ginger-garlic paste, tomatoes, and biryani masala. Cook until the tomatoes are soft.</li>
+            <li>Add chicken and cook until fully done. Add yogurt and mix well.</li>
+            <li>In a separate pot, layer the chicken mix and partially cooked rice. Garnish with coriander and mint
+                leaves.</li>
+            <li>Cover and cook on low heat for 20 minutes until the flavors are absorbed.</li>
+            <li>Serve hot with raita.</li>
+        </ol>
+        <button class="close-btnBir" id="closeBtnBir">Close</button>
+    </div>
+
+
+
+
+    <div class="overlayCM" id="overlayCM"></div>
+    <div class="popupCM" id="popupCM">
+        <h3>Chana Masala Recipe</h3>
+        <h4>Ingredients Required:</h4>
+        <ul>
+            <li>1 cup chickpeas (soaked overnight)</li>
+            <li>2 onions (finely chopped)</li>
+            <li>2 tomatoes (pureed)</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2 tsp chana masala powder</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp turmeric powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>1/2 tsp red chili powder</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander for garnish</li>
+        </ul>
+        <h4>Time Required:</h4>
+        <p>Prep Time: 8 hours (for soaking chickpeas) | Cook Time: 40 minutes</p>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Boil the soaked chickpeas in a pressure cooker with some salt until soft. Drain and set aside.</li>
+            <li>In a pan, heat oil and add cumin seeds. Once they splutter, add chopped onions and sauté until golden
+                brown.</li>
+            <li>Add ginger-garlic paste and cook for another minute.</li>
+            <li>Add tomato puree and cook until the oil starts separating from the masala.</li>
+            <li>Add turmeric, coriander powder, red chili powder, and chana masala powder. Stir well.</li>
+            <li>Add the boiled chickpeas and mix well with the masala.</li>
+            <li>Add water as needed to get the desired consistency and let it simmer for 10 minutes.</li>
+            <li>Garnish with fresh coriander leaves and serve hot with rice or roti.</li>
+        </ol>
+        <button class="close-btnCM" id="closeBtnCM">Close</button>
+    </div>
+
+
+
+
+    <div class="overlayHB" id="overlayHB"></div>
+    <div class="popupHB" id="popupHB">
+        <h3>Halwa Recipe</h3>
+        <h4>Ingredients Requirement:</h4>
+        <ul>
+            <li>1 cup Semolina (Suji)</li>
+            <li>1/2 cup Ghee</li>
+            <li>1/2 cup Sugar</li>
+            <li>2 cups Water</li>
+            <li>Cardamom (optional)</li>
+            <li>Nuts for garnish (optional)</li>
+        </ul>
+        <h4>Time Required:</h4>
+        <p>Total Time: 30 minutes</p>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Heat ghee in a pan and add semolina (suji). Roast it until it turns golden brown.</li>
+            <li>In another pan, heat water and sugar until the sugar dissolves completely.</li>
+            <li>Slowly pour the sugar syrup into the roasted semolina and stir continuously to avoid lumps.</li>
+            <li>Cook until the halwa thickens and leaves the sides of the pan. Add cardamom and garnish with nuts.</li>
+            <li>Serve hot.</li>
+        </ol>
+        <button class="close-btnHB" id="closeBtnHB">Close</button>
+    </div>
+
+
+
+
+
+    <div class="overlayMG" id="overlayMG"></div>
+    <div class="popupMG" id="popupMG">
+        <h3>Maggi Recipe</h3>
+        <h4>Ingredients Required:</h4>
+        <ul>
+            <li>1 packet Maggi noodles</li>
+            <li>1.5 cups water</li>
+            <li>1/4 tsp salt (optional)</li>
+            <li>1 tsp oil or butter</li>
+            <li>Vegetables (optional - carrots, peas, onions)</li>
+        </ul>
+        <h4>Time Required:</h4>
+        <p>Approx. 10 minutes</p>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Boil 1.5 cups of water in a pan.</li>
+            <li>Add the Maggi noodle cake and cook for 2 minutes.</li>
+            <li>Add the Maggi tastemaker and stir well.</li>
+            <li>Cook for another 2-3 minutes until the water is absorbed.</li>
+            <li>Optional: Add vegetables, oil, or butter for extra flavor.</li>
+            <li>Serve hot and enjoy!</li>
+        </ol>
+        <button class="close-btnMG" id="closeBtnMG">Close</button>
+    </div>
+
+
+
+
+    <div class="overlayPB" id="overlayPB"></div>
+    <div class="popupPB" id="popupPB">
+        <h3>Paneer Butter Masala Recipe</h3>
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>200g paneer (cubed)</li>
+            <li>2 tomatoes (pureed)</li>
+            <li>1 onion (chopped)</li>
+            <li>2 tbsp butter</li>
+            <li>1/2 cup cream</li>
+            <li>2 tsp ginger-garlic paste</li>
+            <li>1 tsp garam masala</li>
+            <li>1 tsp red chili powder</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander for garnish</li>
+        </ul>
+        <h4>Time Required:</h4>
+        <p>Preparation: 10 minutes<br>Cooking: 20 minutes</p>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Heat butter in a pan and sauté the onions until golden.</li>
+            <li>Add ginger-garlic paste and cook for a minute.</li>
+            <li>Stir in the tomato puree, red chili powder, garam masala, and salt.</li>
+            <li>Let it cook for 5-7 minutes until the oil separates.</li>
+            <li>Add cream and mix well.</li>
+            <li>Gently add the paneer cubes and simmer for 5 minutes.</li>
+            <li>Garnish with fresh coriander and serve hot.</li>
+        </ol>
+        <button class="close-btnPB" id="closeBtnPB">Close</button>
+    </div>
+
+
+
+
+    <div class="overlayAT" id="overlayAT"></div>
+    <div class="popupAT" id="popupAT">
+        <h3 class="recipe-title">Aloo Tikki Recipe</h3>
+        <div class="recipe-section">
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>4 boiled potatoes</li>
+                <li>2 tbsp breadcrumbs</li>
+                <li>1 finely chopped green chili</li>
+                <li>1 tsp cumin powder</li>
+                <li>1 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>Oil for shallow frying</li>
+            </ul>
+        </div>
+        <div class="recipe-section">
+            <h4>Time Required:</h4>
+            <p>Preparation Time: 10 minutes</p>
+            <p>Cooking Time: 15 minutes</p>
+        </div>
+        <div class="recipe-section">
+            <h4>Steps to Cook:</h4>
+            <ol>
+                <li>In a bowl, mash the boiled potatoes.</li>
+                <li>Add breadcrumbs, green chili, cumin powder, garam masala, and salt.</li>
+                <li>Mix well and shape into small patties.</li>
+                <li>Heat oil in a pan and shallow fry the patties until golden brown on both sides.</li>
+                <li>Serve hot with chutney or sauce.</li>
+            </ol>
+        </div>
+        <button class="close-btnAT" id="closeBtnAT">Close</button>
+    </div>
+
+
+
+
+    <div class="overlayCake" id="overlayCake"></div>
+    <div class="popupCake" id="popupCake">
+        <h3>Cake Recipe</h3>
+        <p><strong>Time Required:</strong> 1 hour 30 minutes</p>
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>2 cups flour</li>
+            <li>1 cup sugar</li>
+            <li>1/2 cup butter</li>
+            <li>3 eggs</li>
+            <li>1 tsp baking powder</li>
+            <li>1 tsp vanilla extract</li>
+            <li>1/2 cup milk</li>
+        </ul>
+        <h4>Steps to Cook:</h4>
+        <ol>
+            <li>Preheat the oven to 180°C (350°F).</li>
+            <li>Mix the flour and baking powder together.</li>
+            <li>Cream the butter and sugar until light and fluffy.</li>
+            <li>Add the eggs one at a time, mixing well after each addition.</li>
+            <li>Gradually add the flour mixture and milk, mixing until smooth.</li>
+            <li>Stir in the vanilla extract.</li>
+            <li>Pour the batter into a greased cake tin.</li>
+            <li>Bake for 45-50 minutes or until a toothpick comes out clean.</li>
+            <li>Let the cake cool, then serve and enjoy!</li>
+        </ol>
+        <button class="close-btnCake" id="closeBtnCake">Close</button>
+    </div>
+
+
+    <script src="sript.js"></script>
+    <script>
+        // $("#searchInput").focus(function () {
+
+        //     $("#searchInput").css({
+        //         "display": "inline",
+        //         "width": "40%",
+        //         "border": "1px solid #40585d",
+        //         "opacity": "1",
+        //         "padding": "8px 20px 8px 20px",
+        //         "background-image": "none",
+        //         "box-shadow": "0 0 1px black"
+        //     });
+        //     $("#submitsearch").css("display", "inline");
+
+        //     $("#searchInput").prop("placeholder", "");
+        // });
+
+
+
+        const biryaniBox = document.getElementById("biryaniBox");
+        const popup1 = document.getElementById("popupBir");
+        const overlay1 = document.getElementById("overlayBir");
+        const closeBtn1 = document.getElementById("closeBtnBir");
+        biryaniBox.addEventListener("click", function () {
+            popup1.style.display = "block"; // Show the popup
+            overlay1.style.display = "block"; // Show the overlay background
+        });
+        closeBtn1.addEventListener("click", function () {
+            popup1.style.display = "none"; // Hide the popup
+            overlay1.style.display = "none"; // Hide the overlay background
+        });
+        overlay1.addEventListener("click", function () {
+            popup1.style.display = "none"; // Hide the popup
+            overlay1.style.display = "none"; // Hide the overlay background
+        });
+
+
+
+        const chanaMasalaBox = document.getElementById("chanaMasalaBox");
+        const popup2 = document.getElementById("popupCM");
+        const overlay2 = document.getElementById("overlayCM");
+        const closeBtn2 = document.getElementById("closeBtnCM");
+        chanaMasalaBox.addEventListener("click", function () {
+            popup2.style.display = "block"; // Show the popup
+            overlay2.style.display = "block"; // Show the overlay background
+        });
+        closeBtn2.addEventListener("click", function () {
+            popup2.style.display = "none"; // Hide the popup
+            overlay2.style.display = "none"; // Hide the overlay background
+        });
+        overlay2.addEventListener("click", function () {
+            popup2.style.display = "none"; // Hide the popup
+            overlay2.style.display = "none"; // Hide the overlay background
+        });
+
+
+
+
+        const halwaBox = document.getElementById("halwaBox");
+        const popup3 = document.getElementById("popupHB");
+        const overlay3 = document.getElementById("overlayHB");
+        const closeBtn3 = document.getElementById("closeBtnHB");
+        halwaBox.addEventListener("click", function () {
+            popup3.style.display = "block"; // Show the popup
+            overlay3.style.display = "block"; // Show the overlay background
+        });
+        closeBtn3.addEventListener("click", function () {
+            popup3.style.display = "none"; // Hide the popup
+            overlay3.style.display = "none"; // Hide the overlay background
+        });
+        overlay3.addEventListener("click", function () {
+            popup3.style.display = "none"; // Hide the popup
+            overlay3.style.display = "none"; // Hide the overlay background
+        });
+
+
+
+
+        const maggiBox = document.getElementById("maggiBox");
+        const popup4 = document.getElementById("popupMG");
+        const overlay4 = document.getElementById("overlayMG");
+        const closeBtn4 = document.getElementById("closeBtnMG");
+        maggiBox.addEventListener("click", function () {
+            popup4.style.display = "block"; // Show the popup
+            overlay4.style.display = "block"; // Show the overlay background
+        });
+        closeBtn4.addEventListener("click", function () {
+            popup4.style.display = "none"; // Hide the popup
+            overlay4.style.display = "none"; // Hide the overlay background
+        });
+        overlay4.addEventListener("click", function () {
+            popup4.style.display = "none"; // Hide the popup
+            overlay4.style.display = "none"; // Hide the overlay background
+        });
+
+
+
+
+        const paneerBox = document.getElementById("paneerBox");
+        const popup5 = document.getElementById("popupPB");
+        const overlay5 = document.getElementById("overlayPB");
+        const closeBtn5 = document.getElementById("closeBtnPB");
+        paneerBox.addEventListener("click", function () {
+            popup5.style.display = "block"; // Show the popup
+            overlay5.style.display = "block"; // Show the overlay background
+        });
+        closeBtn5.addEventListener("click", function () {
+            popup5.style.display = "none"; // Hide the popup
+            overlay5.style.display = "none"; // Hide the overlay background
+        });
+        overlay5.addEventListener("click", function () {
+            popup5.style.display = "none"; // Hide the popup
+            overlay5.style.display = "none"; // Hide the overlay background
+        });
+
+
+
+
+        const atikkiBox = document.getElementById("atikkiBox");
+        const popup6 = document.getElementById("popupAT");
+        const overlay6 = document.getElementById("overlayAT");
+        const closeBtn6 = document.getElementById("closeBtnAT");
+        atikkiBox.addEventListener("click", function () {
+            popup6.style.display = "block";
+            overlay6.style.display = "block";
+        });
+        closeBtn6.addEventListener("click", function () {
+            popup6.style.display = "none"; 
+            overlay6.style.display = "none";
+        });
+        overlay6.addEventListener("click", function () {
+            popup6.style.display = "none";
+            overlay6.style.display = "none";
+        });
+
+
+
+        const cakeBox = document.getElementById("cakeBox");
+        const popup7 = document.getElementById("popupCake");
+        const overlay7 = document.getElementById("overlayCake");
+        const closeBtn7 = document.getElementById("closeBtnCake");
+        cakeBox.addEventListener("click", function () {
+            popup7.style.display = "block"; 
+            overlay7.style.display = "block";
+        });
+        closeBtn7.addEventListener("click", function () {
+            popup7.style.display = "none";
+            overlay7.style.display = "none";
+        });
+        overlay7.addEventListener("click", function () {
+            popup7.style.display = "none";
+            overlay7.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
