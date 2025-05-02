@@ -1,5 +1,5 @@
 .popupmg {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed; 
     top: 50%;
     left: 50%;
@@ -15,7 +15,7 @@
 }
 
 .overlaymg {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,6 +33,3 @@
     border: none;
     border-radius: 5px;
 }
-/* .overlay .popup p, h4, ul, ol, button{
-    padding-top: 20px;
-} */
